@@ -1,3 +1,3 @@
-autoconfig.cfg goes in:	/usr/lib/firefox/
+autoconfig.cfg goes in:	C:\Program Files\Mozilla Firefox\
 
-autoconfig.js goes in:	/usr/lib/firefox/defaults/pref
+autoconfig.js goes in:	C:\Program Files\Mozilla Firefox\defaults\pref
