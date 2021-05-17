@@ -10,4 +10,4 @@ autoconfig.cfg goes in:	/usr/lib/firefox/
 
 autoconfig.js goes in:	/usr/lib/firefox/defaults/pref
 
-Then simply setting newtab in homepage to defaults in Firefox's Options menu!
+Then simply setting newtab and homepage to defaults in Firefox's Options menu!
