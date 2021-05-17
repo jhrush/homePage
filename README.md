@@ -1,4 +1,4 @@
-#Just a basic homepage and newtab configuration for firefox!
+# Just a basic homepage and newtab configuration for firefox!
 
 In autoconfig.cfg make sure to change line:
 
