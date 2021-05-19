@@ -14,4 +14,4 @@ Then simply setting newtab and homepage to defaults in Firefox's Options menu!
 
 You can see an example of this homepage at:
 
-https://jhrush21.github.io/homePage/hp.html
+https://jhrush.github.io/homePage/hp.html
