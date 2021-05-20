@@ -49,9 +49,31 @@ a:link, a:visited {
   display:table;
   clear: both;
 }
+
 .search {
-  text-align:center;
-  width:100%;
+  	border-radius: 16px;
+	width: 80%;
+	height: 40px;
+  	background: #282A36;
+	border-color: #6272a4;
+	color:#f8f8f2;
+	font-size: 21px;
+}
+.submit {
+  	border-radius: 100px;
+	width: 50px;
+	height: 50px;
+  	background: #6272a4;
+	border-color: #6272a4;
+	color:#bd93f9;
+	font-size: 21px;
+}
+
+input:focus {
+  #background-color: #6272a4;
+  outline: none;
+  background: #f8f8f2;
+  color: #44475a;
 }
 
 h1, h3 {
@@ -66,11 +88,10 @@ line-height: /* adjust to tweak wierd fonts */;
 <body>
   <h1>Welcome!</h1>
   <div class= "row">
-    <!--
-    <div class="search">
-      <iframe src="https://duckduckgo.com/search.html?width=600&prefill=Search&focus=yes" style="overflow:hidden;margin:0;padding:0;width:400px;height:40px;" frameborder="0"></iframe>
-    </div>
-    -->
+	<form method="get" action="https://duckduckgo.com/">
+		<input size"200" class="search" name="q" placeholder="Search..." autofocus>
+		<!--<input type="submit" class="submit" value="Go!">-->
+	</form>
 	<div class="links">
 	  <h3> Major </h3>
       <a href="https://onedrive.live.com/?id=root&cid=8924BDF4EF1859C0">Cloud</a><br>
