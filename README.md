@@ -10,7 +10,8 @@ autoconfig.cfg goes in:	/usr/lib/firefox/
 
 autoconfig.js goes in:	/usr/lib/firefox/defaults/pref
 
-Then simply set newtab to default and homepage to what you set your newTabURL to:
+Then simply set newtab to default and homepage to what you set your newTabURL to. 
+It should be set to something similar to the line below:
 
 >file:///home/jake/Projects/homePage/hp.html
 
