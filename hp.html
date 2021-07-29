@@ -63,7 +63,7 @@ a:link, a:visited {
 	color:#f8f8f2;
 	font-size: 21px;
 	height: 40px;
-  padding-left: 10px;
+    padding-left: 10px;
 	width: 80%;
 }
 .submit {
@@ -82,13 +82,59 @@ input:focus {
   	background: #f8f8f2;
   	color: #44475a;
 }
+
+.clock {
+    font-size: 53px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    color:#f1fa8c;
+    display:inline-block;
+}
+.hide {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  visibility: hidden;
+  color: #ffb86c;
+}
+
+.clock:hover + .hide {
+    visibility: visible;
+}
+
 </style>
 </head>
 
 
-<body>
-  <h1>Welcome!</h1>
-  <div class= "row">
+<body onload="startTime()">
+    <script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      let epoc = Math.trunc(today.getTime() / 1000);
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('epoc').innerHTML =  epoc;
+      document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    </script>
+
+    <!-- <h1>Welcome!</h1> -->
+
+    <div class="row">
+       <div class="clock" id="clock"></div>
+       <div class="hide"><div id="epoc"></div></div>
+    </div>
+
+    <div class= "row">
 	<form method="get" action="https://duckduckgo.com/">
 		<input size"200" class="search" name="q" placeholder="Search..." autofocus autocomplete="off">
 		<!--<input type="submit" class="submit" value="Go!">-->
