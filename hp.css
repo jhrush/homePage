@@ -1,0 +1,108 @@
+h1 {
+  	text-align: center;
+  	color: #FBE046
+}
+h3 {
+  	text-align: center;
+  	color: #6AF597
+}
+h1, h3 {
+	margin-top: 25px;
+	margin-bottom: 12px;
+	line-height: /* adjust to tweak wierd fonts */;
+}
+
+html {
+  	display: table;
+  	margin: auto;
+}
+body {
+  	background-color: #282a36;
+  	color: white;
+  	font-size: 25px;
+  	display: table-cell;
+  	vertical-align: middle;
+  	padding-top: 15%;
+}
+a { 
+  	text-decoration: none;
+}
+a:link, a:visited {
+  	color: #5FD5FB;
+}
+.links {
+ 	text-align: center;
+ 	float: left;
+ 	min-width: 180px;
+}
+.section {
+ 	height: 200px;
+}
+
+.row {
+  	white-space: nowrap;
+  	overflow-x: hidden;
+  	text-align:center;
+}
+/* Clear floats after the columns */
+.row:after {
+  	content: "";
+  	display:table;
+  	clear: both;
+}
+
+.search {
+	background: #282A36;
+	border-color: #6272a4;
+	border-radius: 16px;
+	color:#f8f8f2;
+	font-size: 21px;
+	height: 40px;
+    padding-left: 10px;
+	width: 80%;
+}
+.submit {
+  	border-radius: 100px;
+	width: 50px;
+	height: 50px;
+  	background: #6272a4;
+	border-color: #6272a4;
+	color:#bd93f9;
+	font-size: 21px;
+}
+
+input:focus {
+  	#background-color: #6272a4;
+  	outline: none;
+  	background: #f8f8f2;
+  	color: #44475a;
+}
+
+.clock {
+    font-size: 53px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    color:#f1fa8c;
+}
+.hglass {
+    color:#f8f8f2;
+    display:inline-block;
+}
+.hglass:before {
+    content: "⧖";
+}
+.hglass:hover:before {
+    content: "⧗";
+}
+.hide {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  visibility: hidden;
+  color: #ffb86c;
+}
+
+.hglass:hover + .hide {
+    visibility: visible;
+}

@@ -1,144 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-h1 {
-  	text-align: center;
-  	color: #FBE046
-}
-h3 {
-  	text-align: center;
-  	color: #6AF597
-}
-h1, h3 {
-	margin-top: 25px;
-	margin-bottom: 12px;
-	line-height: /* adjust to tweak wierd fonts */;
-}
-
-html {
-  	display: table;
-  	margin: auto;
-}
-body {
-  	background-color: #282a36;
-  	color: white;
-  	font-size: 25px;
-  	display: table-cell;
-  	vertical-align: middle;
-  	padding-top: 15%;
-}
-a { 
-  	text-decoration: none;
-}
-a:link, a:visited {
-  	color: #5FD5FB;
-}
-.links {
- 	text-align: center;
- 	float: left;
- 	min-width: 180px;
-}
-.section {
- 	height: 200px;
-}
-
-.row {
-  	white-space: nowrap;
-  	overflow-x: hidden;
-  	text-align:center;
-}
-/* Clear floats after the columns */
-.row:after {
-  	content: "";
-  	display:table;
-  	clear: both;
-}
-
-.search {
-	background: #282A36;
-	border-color: #6272a4;
-	border-radius: 16px;
-	color:#f8f8f2;
-	font-size: 21px;
-	height: 40px;
-    padding-left: 10px;
-	width: 80%;
-}
-.submit {
-  	border-radius: 100px;
-	width: 50px;
-	height: 50px;
-  	background: #6272a4;
-	border-color: #6272a4;
-	color:#bd93f9;
-	font-size: 21px;
-}
-
-input:focus {
-  	#background-color: #6272a4;
-  	outline: none;
-  	background: #f8f8f2;
-  	color: #44475a;
-}
-
-.clock {
-    font-size: 53px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 12px;
-    color:#f1fa8c;
-}
-.hglass {
-    color:#f8f8f2;
-    display:inline-block;
-}
-.hglass:before {
-    content: "⧖";
-}
-.hglass:hover:before {
-    content: "⧗";
-}
-.hide {
-  margin-top: 12px;
-  margin-bottom: 12px;
-  visibility: hidden;
-  color: #ffb86c;
-}
-
-.hglass:hover + .hide {
-    visibility: visible;
-}
-
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="hp.css" />
+    <script src="hp.js"></script>
 </head>
 
 
 <body onload="startTime()">
-    <script>
-    function startTime() {
-      const today = new Date();
-      let h = today.getHours();
-      let m = today.getMinutes();
-      let s = today.getSeconds();
-      let epoc = Math.trunc(today.getTime() / 1000);
-      m = checkTime(m);
-      s = checkTime(s);
-      let hms = `${h}:${m}:${s}`;
-      let utchms = `${today.getUTCHours()}:${today.getUTCMinutes()}:${today.getUTCSeconds()}`;
-      document.getElementById('epoc').innerHTML = "UTC: " + utchms + "~" + epoc;
-      document.getElementById('clock').innerHTML =  hms;
-      setTimeout(startTime, 1000);
-    }
-
-    function checkTime(i) {
-      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-      return i;
-    }
-    </script>
-
     <!-- <h1>Welcome!</h1> -->
 
     <div class="row">
@@ -226,7 +95,6 @@ input:focus {
           <a href=""></a><br>
           <a href=""></a><br>
           <a href=""></a><br>
-
 	</div>
    </div>
 </body>
