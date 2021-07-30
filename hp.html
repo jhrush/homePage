@@ -85,11 +85,21 @@ input:focus {
 
 .clock {
     font-size: 53px;
+    font-weight: bold;
     text-align: center;
     margin-top: 25px;
     margin-bottom: 12px;
     color:#f1fa8c;
+}
+.hglass {
+    color:#f8f8f2;
     display:inline-block;
+}
+.hglass:before {
+    content: "⧖";
+}
+.hglass:hover:before {
+    content: "⧗";
 }
 .hide {
   margin-top: 12px;
@@ -98,7 +108,7 @@ input:focus {
   color: #ffb86c;
 }
 
-.clock:hover + .hide {
+.hglass:hover + .hide {
     visibility: visible;
 }
 
@@ -116,8 +126,10 @@ input:focus {
       let epoc = Math.trunc(today.getTime() / 1000);
       m = checkTime(m);
       s = checkTime(s);
-      document.getElementById('epoc').innerHTML =  epoc;
-      document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s;
+      let hms = `${h}:${m}:${s}`;
+      let utchms = `${today.getUTCHours()}:${today.getUTCMinutes()}:${today.getUTCSeconds()}`;
+      document.getElementById('epoc').innerHTML = "UTC: " + utchms + "~" + epoc;
+      document.getElementById('clock').innerHTML =  hms;
       setTimeout(startTime, 1000);
     }
 
@@ -131,6 +143,7 @@ input:focus {
 
     <div class="row">
        <div class="clock" id="clock"></div>
+       <div class="hglass" id="hglass"></div>
        <div class="hide"><div id="epoc"></div></div>
     </div>
 
@@ -186,7 +199,7 @@ input:focus {
 	
 	<div class="links">
 	  <h3> Themes </h3>
-          <a href="https://draculatheme.com/">Dracula</a><br>
+          <a href="https://github.com/dracula/dracula-theme">Dracula</a><br>
           <a href=""></a><br>
           <a href=""></a><br>
           <a href=""></a><br>
@@ -216,10 +229,5 @@ input:focus {
 
 	</div>
    </div>
-
-	<script>
-
-	</script>
-
 </body>
 </html>
