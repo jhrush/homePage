@@ -91,10 +91,10 @@ input:focus {
     display:inline-block;
 }
 .hglass:before {
-    content: "⧖";
+    content: "\029D6";
 }
 .hglass:hover:before {
-    content: "⧗";
+    content: "\029D7";
 }
 .hide {
   margin-top: 12px;
