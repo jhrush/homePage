@@ -1,3 +1,5 @@
+window.onload=startTime;
+
 function startTime() {
   const today = new Date();
   let h = today.getHours();
