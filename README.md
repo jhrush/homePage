@@ -10,7 +10,7 @@ Simply run:
 
 >sh installForFirefox.sh
 
-then go to about:preferences and click home.
+then go to about:preferences and click Home in the sidebar
 
 change the home url to a custom url at:
 
