@@ -1,5 +1,8 @@
+body {
+    font-family: 'DejaVu Serif', arial;
+}
 h1 {
-  	text-align: center;
+    text-align: center;
   	color: #FBE046
 }
 h3 {
