@@ -92,6 +92,7 @@ input:focus {
 .hglass {
     color:#f8f8f2;
     display:inline-block;
+    font-family: 'DejaVu Serif', arial;
 }
 .hglass:before {
     content: "\029D6";
