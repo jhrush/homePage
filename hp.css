@@ -55,12 +55,18 @@ a:link, a:visited {
 }
 
 .search {
-	background: #282A36;
-	border-color: #6272a4;
-	border-radius: 16px;
-	color:#f8f8f2;
+	#background: #282A36;
+  	background: #f8f8f2;
+	#border-color: #6272a4;
+    border-style:solid;
+	border-color:#f8f8f2;
+	border-radius: 53px;
+    border-width: medium;
+	#color:#f8f8f2;
+  	color: #44475a;
 	font-size: 21px;
 	height: 40px;
+    outline: none;
     padding-left: 10px;
 	width: 80%;
 }
@@ -76,7 +82,7 @@ a:link, a:visited {
 
 input:focus {
   	#background-color: #6272a4;
-  	outline: none;
+    border-color: #a142f4;
   	background: #f8f8f2;
   	color: #44475a;
 }
