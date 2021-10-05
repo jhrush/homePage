@@ -55,11 +55,11 @@ a:link, a:visited {
 }
 
 .search {
-	#background: #282A36;
+	#background: #282a36;
   	background: #f8f8f2;
 	#border-color: #6272a4;
-    border-style:solid;
 	border-color:#f8f8f2;
+    border-style:solid;
 	border-radius: 53px;
     border-width: medium;
 	#color:#f8f8f2;
@@ -83,8 +83,9 @@ a:link, a:visited {
 input:focus {
   	#background-color: #6272a4;
     border-color: #a142f4;
-  	background: #f8f8f2;
-  	color: #44475a;
+  	#background: #f8f8f2;
+  	background: #000000;
+  	color: #f8f8f2;
 }
 
 .clock {
