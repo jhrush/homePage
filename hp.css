@@ -55,25 +55,17 @@ a:link, a:visited {
 }
 
 .search {
-	#background: #282a36;
-  	#background: #f8f8f2;
-	#border-color: #6272a4;
-	#border-color:#f8f8f2;
-	#color:#f8f8f2;
-  	#color: #44475a;
+    background:#44475a;
+    border-color:#44475a;
     border-style:solid;
-	border-radius: 53px;
-    border-width: medium;
-	font-size: 21px;
-	height: 40px;
-    outline: none;
-    padding-left: 10px;
-	width: 80%;
-  	#background-color: #6272a4;
-    border-color: #a142f4;
-  	#background: #f8f8f2;
-  	background: #282a36;
-  	color: #f8f8f2;
+	border-radius:53px;
+    border-width:3px;
+	font-size:21px;
+	height:40px;
+    outline:none;
+    padding-left:10px;
+	width:80%;
+  	color:#f8f8f2;
 
 }
 .submit {
@@ -87,12 +79,9 @@ a:link, a:visited {
 }
 
 input:focus {
-	#background: #282a36;
-  	background: #f8f8f2;
-	#border-color: #6272a4;
-	border-color:#f8f8f2;
-	#color:#f8f8f2;
-  	color: #44475a;
+    border-color:#a142f4;
+    border-width:medium;
+    background:#17181f;
 }
 
 .clock {
