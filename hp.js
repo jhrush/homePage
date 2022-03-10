@@ -9,10 +9,13 @@ function startTime() {
   m = checkTime(m);
   s = checkTime(s);
   let hms = `${h}:${m}:${s}`;
-  let utchms = `${today.getUTCHours()}:${m}:${s}`;
+  let utch=`${today.getUTCHours()}`;
+  let utchms = `${utch}:${m}:${s}`;
  
   if (h < 10) {
     hms=`0${hms}`;
+  }
+  if (utch < 10) {
     utchms=`0${utchms}`;
   }
 
