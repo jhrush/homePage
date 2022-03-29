@@ -19,7 +19,7 @@ function startTime() {
     utchms=`0${utchms}`;
   }
 
-  document.getElementById('epoc').innerHTML = "UTC: " + utchms + "~" + epoc;
+  document.getElementById('epoc').innerHTML =  utchms + " ~ " + epoc;
   document.getElementById('clock').innerHTML =  hms;
   setTimeout(startTime, 1000);
 }
