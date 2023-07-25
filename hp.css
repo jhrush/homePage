@@ -3,11 +3,14 @@ body {
 }
 h1 {
     text-align: center;
-  	color: #FBE046
+  	color: #FBE046;
 }
 h3 {
   	text-align: center;
-  	color: #6AF597
+  	color: #6AF597;
+}
+.alth3 {
+    color: #ff5555;
 }
 h1, h3 {
 	margin-top: 25px;
